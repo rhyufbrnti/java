@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershopmanagementsystem.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="440.0" prefWidth="325.0" styleClass="right-form" stylesheets="@loginDesign.css">
+               <children>
+                  <Label layoutX="47.0" layoutY="296.0" text="Flower Shop Management System" textFill="#fcbd00">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="209.0" fitWidth="303.0" layoutX="11.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/rsz_florist.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="325.0" prefHeight="440.0" prefWidth="325.0" styleClass="left-form" stylesheets="@loginDesign.css">
+               <children>
+                  <Label layoutX="64.0" layoutY="92.0" text="Welcome!!!" textFill="#4d3e1c">
+                     <font>
+                        <Font name="Lucida Calligraphy Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="53.0" layoutY="182.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="53.0" layoutY="226.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="loginBtn" layoutX="53.0" layoutY="283.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Button fx:id="close" layoutX="266.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="54.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
